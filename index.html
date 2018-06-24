@@ -10,7 +10,8 @@
 <body>
     <div id="app">
         <div class="name">{{name1}}</div>
-	<div class="age">{{age}}</div>
+	<div class="age">{{value}}</div>
+	<button @click='(value >0 ? value-- : value++)'>click me</button>
     </div>
     <script>
         new Vue({
@@ -18,7 +19,8 @@
             data:{
                 name:'tzf',
 		        age:6,
-		        name1:'tgs'
+		        name1:'tgs',
+                value:0
             }
         })
     </script>
